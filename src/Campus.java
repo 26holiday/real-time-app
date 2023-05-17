@@ -14,6 +14,5 @@ public class Campus {
     }
     public Department getDepartment() {
 
-
     }
 }
