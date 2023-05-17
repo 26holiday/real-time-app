@@ -4,12 +4,13 @@ import java.util.List;
 public class Campus {
     private String name;
     private String address;
-    private Directory directory;
+    private Director director;
+    ArrayList<Department> departments;    
 
-    public Campus(String name, String address, Directory directory, ArrayList<Department> departments) {
+    public Campus(String name, String address, Director directory, ArrayList<Department> departments) {
         this.name = name;
         this.address = address;
-        this.directory = directory;
+        this.director = director;
         this.departments = departments;
     }
 
@@ -29,12 +30,12 @@ public class Campus {
         this.address = address;
     }
 
-    public Directory getDirectory() {
-        return directory;
+    public Director getDirector() {
+        return director;
     }
 
-    public void setDirectory(Directory directory) {
-        this.directory = directory;
+    public void setDirector(Director director) {
+        this.director = director;
     }
 
     public ArrayList<Department> getDepartments() {
@@ -45,15 +46,13 @@ public class Campus {
         this.departments = departments;
     }
 
-    ArrayList<Department> departments;
     public void addDepartment(Department department) {
 
     }
     public void removeDepartment(Department department){
 
     }
-    public Department getDepartment() {
-
-
+    public ArrayList<Department> getDepartment() {
+        return departments;
     }
 }
