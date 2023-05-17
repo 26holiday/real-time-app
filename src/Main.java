@@ -7,7 +7,7 @@ public class Main {
     public static void menu() {
 
         System.out.println("-----------------------------------------------");
-        System.out.println("------Welcome to University Maagment System----");
+        System.out.println("------Welcome to University Managment System----");
         System.out.println("-----------------------------------------------");
         System.out.println("Enter a command: \n");
         System.out.println("1 - Employee             2 - Lab");
