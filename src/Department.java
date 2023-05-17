@@ -21,5 +21,15 @@ public class Department {
         return labs;
     }
 
+    public void addLab(Lab lab)
+    {
+        labs.add(lab);
+    }
+
+    public void removeLab(Lab lab)
+    {
+        labs.remove(lab);
+    }
+
     
 }

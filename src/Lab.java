@@ -36,20 +36,36 @@ public class Lab {
     }
 
 
-    public void addComputer()
+    public void addComputer(Computer computer)
     {
-
+        computers.add(computer);
     }
     public void removeComputer(Computer computer)
     {
-
+        computers.remove(computer);
     }
 
     public Computer getComputer(int ComputerID)
     {
+        Computer computer2 = null;
+        for (Computer computer : computers) {
+            int ID = Integer.parseInt(computer.getSystemId());
+            if (ID == ComputerID) {
+                computer2 = computer;
+                return computer;
+            }
+            else{
+                System.out.println("Computer not found");
+            }
+        }
+        return computer2;
 
     }
-    {
 
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
     }
 }
