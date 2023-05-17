@@ -1,24 +1,6 @@
 
-public class Director {
-    Employee directorDetails;
-
-    public Director(Employee directorDetails) {
-        this.directorDetails = directorDetails;
+public class Director extends Employee{
+    public Director(String name, String grade) {
+        super(name, grade);
     }
-
-    public Employee getDirectorDetails() {
-        return directorDetails;
-    }
-
-
-    public void setDirectorDetails(Employee directorDetails) {
-        this.directorDetails = directorDetails;
-    }
-
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
-    }
-
 }

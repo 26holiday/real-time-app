@@ -7,7 +7,7 @@ public class Campus {
     private Director director;
     ArrayList<Department> departments;    
 
-    public Campus(String name, String address, Director directory, ArrayList<Department> departments) {
+    public Campus(String name, String address, Director director, ArrayList<Department> departments) {
         this.name = name;
         this.address = address;
         this.director = director;
