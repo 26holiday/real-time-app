@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Department {
     HOD hod;
     ArrayList<Lab> labs;
